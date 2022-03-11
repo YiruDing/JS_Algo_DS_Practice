@@ -10,6 +10,14 @@ function maxSubArraySum(arr,num){
     for(let j = num; j < arr.length; j++){
         tempSum = tempSum - arr[j - num] + arr[j]
         maxSum = Math.max(maxSum,tempSum)
+        //not to return here!!
+        //You gotta reassign the value
     }
     return maxSum
 }
+
+// XXX
+// for(let j = 0; j < arr.length; j++){
+//     tempSum = tempSum - arr[j] + arr[num + j]
+//     return Math.max(tempSum,maxSum)
+// }
