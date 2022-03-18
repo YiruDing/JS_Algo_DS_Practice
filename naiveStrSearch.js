@@ -4,6 +4,7 @@ function naiveStrSearch(long,short){
         for(let j = 0; j < short.length; j++){
             if(short[j]!== long[i+j]) break;
             if(j === short.length -1) count++;
+            // count++ ????
         }
     }
     return count
