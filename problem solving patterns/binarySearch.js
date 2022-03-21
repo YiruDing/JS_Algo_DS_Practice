@@ -1,5 +1,4 @@
 function binarySearch(arr,value){
-    // add whatever parameters you deem necessary - good luck!
     let start = 0;
     let end = arr.length -1;
     while(start < end){
